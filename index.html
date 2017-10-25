@@ -1,0 +1,127 @@
+<html>
+ <head>
+     <!-- bootstrap cdn -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <!--jQuery cdn -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <!--customised stylesheet -->
+     <link href="style.css" rel="stylesheet" type='text/css'>
+     <!-- google font 'Lato'-->
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+     <!--Font Awesome cdn -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- For responsive design-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <script src='script.js'></script>
+ </head>
+
+ <body>
+     <div class='sidebar' id='sidebar'>
+         <h1>Menu</h1>
+         <a href='#home'><li>Home</li></a>
+         <a href='#aboutMe'><li>About Me</li></a>
+         <a href='#mySkills'><li>My Skills</li></a>
+         <a href='#work'><li>Work</li></a>
+         <a href='#contactMe'><li>Contact</li></a>
+     </div>
+
+     <div id='main'>
+    <div class='home' id='home'>
+        <div class='navbar'>
+            <div class='logo'>T S</div>
+            <button class='menu-icon in' onclick="toggle(this)">
+                <div class='line1'></div>
+                <div class='line2'></div>
+                <div class='line3'></div>
+            </button>
+        </div>
+        <div class='text-center intro' style='display:none'>
+            <h1>Hi, I am Twisha Saraiya</h1>
+            <p>I am trying to learn and grow as a web developer.</p>
+            <p>Based in Mumbai and always excited to work to new projects.</p>
+        </div>
+        <a href='#aboutMe' class='moveDown'><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a>
+     </div>
+
+     <div class='about-me text-center fade-in' id='aboutMe'>
+        <h1>About Me</h1>
+        <p>Twisha loves to code and is trying to be better in making websites.</p></p>She works on different projects and contributes to open source.</p>
+        <p>Currently she is pursuing Computer Science in Thadomal Shahani Engineering college in Mumbai</p>
+        <div class='row'>
+            <div class='col-md-4 text-center'><img src='images/code.png' class='img-fluid'></img>
+            <p>Experimenting is the way of learning new stuff</p></div>
+            <div class='col-md-4 text-center'><img src='images/code1.png' class='img-fluid'></img>
+            <p>Creatively develop new projects</p></div>
+            <div class='col-md-4 text-center'><img src='images/code2.png' class='img-fluid'></img>
+            <p>Make websites that have dynamic content using AJAX/JSON request</p></div>
+        </div>
+     </div>
+
+     <div class='mySkills text-left' id='mySkills'>
+         <div class='white-cover'>
+             <h1>A few of my skills</h1>
+             <p>Twisha likes challenges and building projects that others can use
+             She is curious about how things work and keeps on pushing herself</p>
+             <div class='progress-bar'><div class='progress progress-html'>HTML</div></div>
+             <div class='progress-bar'><div class='progress progress-css'>CSS(Sass)</div></div>
+             <div class='progress-bar'><div class='progress progress-js'>Javascript</div></div>
+             <div class='progress-bar'><div class='progress progress-react'>ReactJS</div></div>
+             <div class='progress-bar'><div class='progress progress-php'>PHP</div></div>
+             <div>
+             <h4>Other skills:</h4>C++,C,Java,Python</div>
+         </div>
+     </div>
+
+     <div class='my-work text-center' id='work'>
+         <h1>My Work</h1>
+         <h2>Take a look some of my work</h2>
+         <div class='row text-center'>
+             <a href='https://codepen.io/Twisha/full/eRrJYv' target="_blank"><div class='col-md-4 col-xs-3 box app1' id='1'>
+             <h4 class='text hide'>Recipe application</h4></div></a>
+             <a href='https://codepen.io/Twisha/full/eRRObL/' target='_blank'><div class='col-md-4 col-xs-3 box app2' id='2'>
+             <h4 class='text hide'>Pomodoro Clock</h4></div></a>
+             <a href='https://codepen.io/Twisha/full/RgYgyo/' target='_blank'><div class='col-md-4 col-xs-3 box app3' id='3'>
+                 <h4 class='text hide'>Camper Leaderboard application</h4></div></a>
+             <a href='https://codepen.io/Twisha/full/jwLRrX/' target='_blank'><div class='col-md-4 col-xs-3 box app4' id='4'>
+             <h4 class='text hide'>Simon Game</h4></div></a>
+             <a href='https://twishasaraiya.github.io/GitHub-Profile-Viewer/' target='_blank'><div class='col-md-4 col-xs-3 box app5' id='5'>
+             <h4 class='text hide'>Github Profile Viewer</h4></div></a>
+             <a href='https://fierce-woodland-57978.herokuapp.com/timestamp.php' target='_blank'><div class='col-md-4 col-xs-3 box app6' id='6'>
+             <h4 class='text hide' style='z-index:100'>Timestamp Microservice</h4></div></a>
+         </div>
+     </div>
+
+     <div class='contact text-center' id='contactMe'>
+         <h1>Contact Me</h1>
+         <p>Interested in working with me or Have any questions you can always send a mail.</p>
+         <form id='fr1' action='mailto:saraiyatwisha@gmail.com' method='post' enctype='text/plain'>
+         <div class='row'>
+             <div class='col-md-6 col-xs-6 form-group name'>
+                 <i class="fa fa-user" aria-hidden="true"></i>
+                 <input type='text' class='form-control' placeholder='name*' aria-required='true' id='name'></input>
+             </div>
+             <div class='col-md-6 col-xs-6 form-group email'>
+                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                 <input type='text' class='form-control' placeholder='mail*' aria-required='true'></input>
+             </div>
+        </div>
+        <div class='msg form-group'>
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+            <textarea class='form-control' rows='10' cols='40' placeholder='Your message' id='msg'></textarea>
+        </div>
+        <button type='Submit' class='btn' id='submit-btn'>Send mail</button>
+    </form>
+     </div>
+     <div class='social text-center'>
+         <h1>You can always find me here</h1>
+         <a href='https://www.facebook.com/twisha.saraiya'><i class="fa fa-facebook" aria-hidden="true" id='fb'></i></a>
+         <a href='https://codepen.io/Twisha/' target='_blank'><i class="fa fa-codepen" aria-hidden="true" id='cp'></i>
+</a>
+         <a href='https://github.com/twishasaraiya' target='_blank'><i class="fa fa-github" aria-hidden="true" id='git'></i></a>
+
+         <a href='#'><i class="fa fa-free-code-camp" aria-hidden="true" id='fcc'></i></a>
+     </div>
+ </div>
+ </body>
+</html>

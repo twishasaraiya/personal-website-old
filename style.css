@@ -1,0 +1,318 @@
+body {
+  margin: 0px;
+  font-size: 20px;
+  font-color: #4F4F4F;
+  font-family: 'Lato';
+  line-height: 1.8; }
+  body .navbar {
+    border-bottom: 2px solid #4F4F4F;
+    margin: 0em 1em;
+    height: 100px; }
+    body .navbar .logo {
+      position: relative;
+      float: left;
+      margin: 0.5em;
+      font-size: 40px;
+      height: 1.5em; }
+    body .navbar .menu-icon {
+      background: transparent;
+      border: 0px;
+      position: relative;
+      float: right;
+      margin-top: 1.7em; }
+      body .navbar .menu-icon .line1, body .navbar .menu-icon .line2, body .navbar .menu-icon .line3 {
+        height: 1px;
+        background-color: #4F4F4F;
+        width: 30px;
+        margin: 6px;
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s; }
+    body .navbar .change .line1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+      -ms-transform: rotate(-45deg) translate(-6px, 6px);
+      transform: rotate(-45deg) translate(-6px, 6px); }
+    body .navbar .change .line2 {
+      opacity: 0; }
+    body .navbar .change .line3 {
+      -webkit-transform: rotate(45deg) translate(-4px, -4px);
+      -ms-transform: rotate(45deg) translate(-4px, -4px);
+      transform: rotate(45deg) translate(-4px, -4px); }
+  body #main, body #sidebar {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+  body .navbar-fixed-top {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    color: #fff;
+    background-color: #111;
+    margin: 0px;
+    trandition: 0.5s;
+    height: 80px;
+    padding-right: 14em; }
+  body .sidebar {
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    top: 0;
+    color: #FBFBF9;
+    background-color: #323239;
+    height: 100%;
+    padding-top: 2em; }
+    body .sidebar li {
+      text-decoration: none;
+      list-style: none;
+      padding: 0.2em 15px;
+      opacity: 0.6; }
+      body .sidebar li:hover {
+        opacity: 1;
+        background-color: #5A5A60; }
+    body .sidebar a {
+      text-decoration: none;
+      color: #fff;
+      margin: 1em;
+      opacity: 0.8; }
+  body .home {
+    background: url(images/crew-56835.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    background-attachment: fixed;
+    background-position: 50% 0px; }
+    body .home .intro {
+      margin-top: 8em; }
+      body .home .intro h1 {
+        font-size: 40px;
+        font-weight: bolder; }
+      body .home .intro p {
+        font-size: 30px; }
+    body .home i {
+      margin-left: 50%;
+      position: absolute;
+      bottom: 80px;
+      color: #4F4F4F;
+      cursor: pointer;
+      -webkit-animation: bounce 1s infinite ease-in-out;
+      animation: bounce 1s infinite ease-in-out; }
+  body .about-me {
+    padding: 4em;
+    background-color: #FBFBF9;
+    width: 100%;
+    height: auto;
+    font-size: 1em; }
+    body .about-me h1 {
+      font-size: 3em;
+      font-weight: bold; }
+    body .about-me img {
+      width: 50%;
+      height: 30%;
+      background-size: cover;
+      border-radius: 100%; }
+  body .mySkills {
+    background: url(images/work2.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-attachment: fixed; }
+    body .mySkills .white-cover {
+      padding: 3em;
+      width: 50%;
+      z-index: 3;
+      opacity: 0.6;
+      background-color: white;
+      height: 100%;
+      color: black; }
+      body .mySkills .white-cover h1 {
+        font-size: 40px;
+        font-weight: 600; }
+      body .mySkills .white-cover p {
+        font-size: 25px; }
+      body .mySkills .white-cover .progress-bar {
+        width: 90%;
+        height: 25px;
+        border-radius: 10px;
+        margin: 1em 3em;
+        z-index: 4;
+        background-color: #9493A1;
+        font-size: 20px;
+        font-weight: 400; }
+        body .mySkills .white-cover .progress-bar .progress {
+          background-color: #FF4500;
+          color: white;
+          border-radius: 10px;
+          height: 100%; }
+        body .mySkills .white-cover .progress-bar .progress-html {
+          width: 90%; }
+        body .mySkills .white-cover .progress-bar .progress-css {
+          width: 85%; }
+        body .mySkills .white-cover .progress-bar .progress-js {
+          width: 60%; }
+        body .mySkills .white-cover .progress-bar .progress-react {
+          width: 50%; }
+        body .mySkills .white-cover .progress-bar .progress-php {
+          width: 30%; }
+  body .my-work {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FBFBF9;
+    padding: 2em; }
+    body .my-work h1 {
+      font-weight: 600; }
+    body .my-work .box {
+      margin: 0.5%;
+      border: 2px solid #9493A1;
+      width: 346px;
+      height: 254px; }
+    body .my-work .app1 {
+      background: url(images/recipe.png) no-repeat;
+      background-size: cover; }
+      body .my-work .app1:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+    body .my-work .app2 {
+      background: url(images/pomodoro.jpg) no-repeat;
+      background-size: cover; }
+      body .my-work .app2:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+    body .my-work .app3 {
+      background: url(images/leaderboard.jpg) no-repeat;
+      background-size: cover; }
+      body .my-work .app3:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+    body .my-work .app4 {
+      background: url(images/simon.jpg) no-repeat;
+      background-size: cover; }
+      body .my-work .app4:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+    body .my-work .app5 {
+      background: url(images/github-profile.png) no-repeat;
+      background-size: cover; }
+      body .my-work .app5:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+    body .my-work .app6 {
+      background: url(images/timestampmicroservice.jpg) no-repeat;
+      background-size: cover; }
+      body .my-work .app6:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+  body .contact {
+    padding: 1em;
+    background: url(images/msg.jpg) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-bottom: 10%; }
+    body .contact .name {
+      margin-left: 18%;
+      position: relative;
+      width: 30%; }
+    body .contact .email {
+      margin-left: 1em;
+      position: relative;
+      width: 30%; }
+    body .contact .msg {
+      width: 60%;
+      position: relative;
+      margin-left: 18.5%; }
+    body .contact i {
+      position: absolute;
+      top: 5px;
+      left: 20px;
+      color: #ee6d66; }
+    body .contact input, body .contact textarea {
+      text-indent: 24px; }
+    body .contact button[type='Submit'] {
+      background-color: #ee6d66;
+      border-radius: 15px;
+      width: 8%;
+      height: 40px;
+      overflow: hidden;
+      border-width: 0px; }
+  body .social {
+    background-color: #111;
+    color: #FBFBF9;
+    padding: 5%; }
+    body .social a {
+      text-decoration: none;
+      margin: 0.5em;
+      padding: 0.5em; }
+    body .social i {
+      color: #FBFBF9; }
+    body .social #fb:hover {
+      color: #3C5A99; }
+    body .social #cp:hover {
+      color: #EB4D30; }
+    body .social #git:hover {
+      color: #8FD4D9; }
+    body .social #fcc:hover {
+      color: #1CA97B; }
+
+.hide {
+  display: none; }
+
+.text {
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: 25%;
+  z-index: 100; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+@media (max-width: 750px) {
+  body {
+    font-size: 18px; }
+    body img {
+      width: 100%; }
+    body .mySkills .white-cover {
+      width: 100%;
+      height: auto; }
+    body .progress-bar {
+      width: 100%; }
+    body .my-work {
+      width: 100%; }
+      body .my-work .box {
+        width: 100%;
+        height: 350px; }
+    body .contact {
+      margin: 0; }
+      body .contact .name, body .contact .email, body .contact .msg {
+        width: 100%;
+        margin: 10px; } }
