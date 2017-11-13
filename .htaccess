@@ -1,0 +1,20 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType images/code.png "access 10 minutes"
+ExpiresByType images/code1.png "access 10 minutes"
+ExpiresByType images/code2.png "access 10 minutes"
+ExpiresByType images/crew-56835.jpg "access 10 minutes"
+ExpiresByType images/github-profile.png "access 10 minutes"
+ExpiresByType images/leaderboard.jpg "access 10 minutes"
+ExpiresByType images/msg.jpg "access 10 minutes"
+ExpiresByType images/pomodoro.jpg "access 10 minutes"
+ExpiresByType images/recipe.png "access 10 minutes"
+ExpiresByType images/simon.jpg "access 10 minutes"
+ExpiresByType images/timestampmicroservice.jpg "access 10 minutes"
+ExpiresByType images/work2.jpg "access 10 minutes"
+ExpiresByType images/recipe.png "access 10 minutes"
+ExpiresByType text/css "access 10 minutes"
+ExpiresByType application/javascript "access 10 minutes"
+</IfModule>
+## EXPIRES CACHING ##
