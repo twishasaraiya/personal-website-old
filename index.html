@@ -110,10 +110,24 @@
          <a href='#'><i class="fa fa-free-code-camp" aria-hidden="true" id='fcc'></i></a>
      </div>
  </div>
- </body>
 
- <!-- bootstrap cdn -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script type="text/javascript">
+      function downloadJSAtOnload(){
+      var element = document.createElement("script");
+      element.src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+      document.body.appendChild(element);
+      }
+      if (window.addEventListener){
+        window.addEventListener("load", downloadJSAtOnload, false);
+      }
+      else if (window.attachEvent)
+      window.attachEvent("onload", downloadJSAtOnload);
+      else window.onload = downloadJSAtOnload;
+      </script>
+ </body>
+  
+ <!-- bootstrap cdn
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
      <!--jQuery cdn -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      <!--customised stylesheet -->
