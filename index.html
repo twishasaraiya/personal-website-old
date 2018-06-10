@@ -5,7 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
  </head>
 
- <body>
+ <body id="particles-js">
      <div class='sidebar' id='sidebar'>
          <h1>Menu</h1>
          <a href='#home'><li>Home</li></a>
@@ -114,7 +114,7 @@
  </div>
  </body>
       <!-- bootstrap cdn -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <!--jQuery cdn -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      <!--customised stylesheet -->
@@ -123,8 +123,14 @@
      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
      <!--Font Awesome cdn -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     
 
+
+     <script src="particles.js"></script>
+     <script type="text/javascript">
+     particlesJS.load('particles-js', 'particles.json', function() {
+          console.log('particles.js loaded - callback');
+      });
+    </script>
      <script src='script.js'></script>
 
 </html>
