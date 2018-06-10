@@ -1,4 +1,4 @@
-$color:  #4F4F4F
+$color:  #fff
 $sidebar:  #111
 $sidebarFont: #FBFBF9
 body
@@ -7,8 +7,10 @@ body
     font-color: $color
     font-family: 'Lato'
     line-height: 1.8
+    #particles-js
+      position: absolute
+      width: 100%
     .navbar
-        border-bottom: 2px solid $color
         margin: 0em 1em
         height: 100px
         .logo
@@ -80,7 +82,9 @@ body
         background-attachment: fixed
         background-position: 50% 0px
         .intro
+            margin: auto
             margin-top: 8em
+            color: $color
             h1
                 font-size: 40px
                 font-weight: bolder
@@ -95,14 +99,16 @@ body
             animation: bounce 1s infinite ease-in-out
 
     .about-me
-        padding: 4em
+        padding: 2em
         background-color: $sidebarFont
         width: 100%
         height: auto
-        font-size: 1em
+        font-size: 2em
+        font-family: 'Allura', cursive
         h1
             font-size: 3em
             font-weight: bold
+            margin: 20px
         img
             width: 50%
             height: 30%
@@ -232,23 +238,21 @@ body
             border-width: 0px
 
     .social
-        background-color: $sidebar
-        color: $sidebarFont
-        padding: 5%
         a
             text-decoration: none
+            color: #000
             margin: 0.5em
             padding: 0.5em
-        i
-            color: $sidebarFont
         #fb:hover
             color:  #3C5A99
         #cp:hover
             color: #EB4D30
         #git:hover
             color:  #8FD4D9
-        #fcc:hover
-            color: #1CA97B
+        #twitter:hover
+            color: #1dcaff
+        #medium:hover
+            color: #66CDAA
 .hide
     display: none
 .text

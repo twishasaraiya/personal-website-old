@@ -1,11 +1,13 @@
 body {
   margin: 0px;
   font-size: 20px;
-  font-color: #4F4F4F;
+  font-color: #fff;
   font-family: 'Lato';
   line-height: 1.8; }
+  body #particles-js {
+    position: absolute;
+    width: 100%; }
   body .navbar {
-    border-bottom: 2px solid #4F4F4F;
     margin: 0em 1em;
     height: 100px; }
     body .navbar .logo {
@@ -22,7 +24,7 @@ body {
       margin-top: 1.7em; }
       body .navbar .menu-icon .line1, body .navbar .menu-icon .line2, body .navbar .menu-icon .line3 {
         height: 1px;
-        background-color: #4F4F4F;
+        background-color: #fff;
         width: 30px;
         margin: 6px;
         -webkit-transition: 0.4s;
@@ -87,7 +89,9 @@ body {
     background-attachment: fixed;
     background-position: 50% 0px; }
     body .home .intro {
-      margin-top: 8em; }
+      margin: auto;
+      margin-top: 8em;
+      color: #fff; }
       body .home .intro h1 {
         font-size: 40px;
         font-weight: bolder; }
@@ -97,19 +101,21 @@ body {
       margin-left: 50%;
       position: absolute;
       bottom: 80px;
-      color: #4F4F4F;
+      color: #fff;
       cursor: pointer;
       -webkit-animation: bounce 1s infinite ease-in-out;
       animation: bounce 1s infinite ease-in-out; }
   body .about-me {
-    padding: 4em;
+    padding: 2em;
     background-color: #FBFBF9;
     width: 100%;
     height: auto;
-    font-size: 1em; }
+    font-size: 2em;
+    font-family: 'Allura', cursive; }
     body .about-me h1 {
       font-size: 3em;
-      font-weight: bold; }
+      font-weight: bold;
+      margin: 20px; }
     body .about-me img {
       width: 50%;
       height: 30%;
@@ -249,24 +255,21 @@ body {
       height: 40px;
       overflow: hidden;
       border-width: 0px; }
-  body .social {
-    background-color: #111;
-    color: #FBFBF9;
-    padding: 5%; }
-    body .social a {
-      text-decoration: none;
-      margin: 0.5em;
-      padding: 0.5em; }
-    body .social i {
-      color: #FBFBF9; }
-    body .social #fb:hover {
-      color: #3C5A99; }
-    body .social #cp:hover {
-      color: #EB4D30; }
-    body .social #git:hover {
-      color: #8FD4D9; }
-    body .social #fcc:hover {
-      color: #1CA97B; }
+  body .social a {
+    text-decoration: none;
+    color: #000;
+    margin: 0.5em;
+    padding: 0.5em; }
+  body .social #fb:hover {
+    color: #3C5A99; }
+  body .social #cp:hover {
+    color: #EB4D30; }
+  body .social #git:hover {
+    color: #8FD4D9; }
+  body .social #twitter:hover {
+    color: #1dcaff; }
+  body .social #medium:hover {
+    color: #66CDAA; }
 
 .hide {
   display: none; }
